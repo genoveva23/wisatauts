@@ -1,0 +1,61 @@
+-- phpMyAdmin SQL Dump
+-- version 4.8.5
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Nov 06, 2023 at 04:45 AM
+-- Server version: 10.1.38-MariaDB
+-- PHP Version: 7.3.3
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `wisatasemarang`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `wisata1`
+--
+
+CREATE TABLE `wisata1` (
+  `id_tempat` int(200) NOT NULL,
+  `nama` varchar(200) NOT NULL,
+  `lokasi` varchar(200) NOT NULL,
+  `hargatiket` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `wisata1`
+--
+
+INSERT INTO `wisata1` (`id_tempat`, `nama`, `lokasi`, `hargatiket`) VALUES
+(1, 'Lawang Sewu', 'Semarang Tengah', 'Rp.2.000'),
+(2, 'Kota Lama', 'Semarang Timur', 'Rp.5.000'),
+(3, 'Museum Ronggowarsito', 'Semarang Barat', 'Rp.6.000'),
+(4, 'Tugu Muda', 'Semarang Tengah', 'Rp.2.000');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `wisata1`
+--
+ALTER TABLE `wisata1`
+  ADD PRIMARY KEY (`id_tempat`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
